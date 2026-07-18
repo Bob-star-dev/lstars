@@ -1,7 +1,7 @@
 <?php
 // ===================================================================
 // File: get_late_loans_preview.php
-// Lokasi: htdocs/lpske-portal/api/get_late_loans_preview.php
+// Lokasi: htdocs/lstars/api/get_late_loans_preview.php
 // Fungsi: Preview peminjaman yang terlambat sebelum kirim notifikasi
 // ===================================================================
 

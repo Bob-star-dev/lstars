@@ -1,13 +1,13 @@
 <?php
 // ===================================================================
 // 6. FILE BANTUAN: cek_database_structure.php (FILE DEBUGGING)
-// Lokasi: htdocs/lpske-portal/admin/cek_database_structure.php
+// Lokasi: htdocs/lstars/admin/cek_database_structure.php
 // Tugas: Melihat struktur database untuk debugging
 // ===================================================================
 
 require '../api/koneksi.php';
 
-echo "<h2>Struktur Database LPSKE Portal</h2>";
+echo "<h2>Struktur Database LSTARS Portal</h2>";
 echo "<hr>";
 
 // 1. Cek tabel inventory

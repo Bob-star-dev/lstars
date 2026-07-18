@@ -38,7 +38,7 @@ try {
     $_SESSION['user_id'] = 'guest';
     $_SESSION['username'] = 'guest';
     $_SESSION['nama_lengkap'] = 'Tamu LSTARS';
-    $_SESSION['email'] = 'tamu@lpske.ac.id';
+    $_SESSION['email'] = 'tamu@lstars.ac.id';
     $_SESSION['role'] = 'guest';
     $_SESSION['is_guest'] = true;
     $_SESSION['login_time'] = time();
@@ -55,8 +55,8 @@ try {
         'redirect' => 'guest-dashboard.php',
         'user_data' => [
             'id' => 'guest',
-            'nama' => 'Tamu LPSKE',
-            'email' => 'tamu@lpske.ac.id',
+            'nama' => 'Tamu LSTARS',
+            'email' => 'tamu@lstars.ac.id',
             'role' => 'guest'
         ]
     ]);

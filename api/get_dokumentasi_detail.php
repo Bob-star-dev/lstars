@@ -1,7 +1,7 @@
 <?php
 // ===================================================================
 // File: get_dokumentasi_detail.php
-// Lokasi: htdocs/lpske-portal/api/get_dokumentasi_detail.php
+// Lokasi: htdocs/lstars/api/get_dokumentasi_detail.php
 // Tugas: Mengambil detail dari SATU kegiatan berdasarkan ID.
 // ===================================================================
 
@@ -62,7 +62,7 @@ try {
         }
         
         // Set uploader default
-        $row['uploader_nama'] = 'Admin LPSKE';
+        $row['uploader_nama'] = 'Admin LSTARS';
         
         $data = $row;
     }

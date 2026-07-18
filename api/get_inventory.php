@@ -1,7 +1,7 @@
 <?php
 // ===================================================================
 // FILE: get_inventory.php (VERSI DIPERBAIKI)
-// Lokasi: htdocs/lpske-portal/api/get_inventory.php
+// Lokasi: htdocs/lstars/api/get_inventory.php
 // Tugas: Mengambil data inventaris dari database dan mengembalikan dalam format JSON
 // ===================================================================
 

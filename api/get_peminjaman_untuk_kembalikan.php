@@ -1,7 +1,7 @@
 <?php
 // ===================================================================
 // File: get_peminjaman_untuk_kembalikan.php (PERBAIKAN SEMENTARA/UMUM)
-// Lokasi: htdocs/lpske-portal/api/get_peminjaman_untuk_kembalikan.php
+// Lokasi: htdocs/lstars/api/get_peminjaman_untuk_kembalikan.php
 // Tugas: Mengambil daftar peminjaman yang sedang 'Dipinjam'
 //        beserta detail alatnya untuk halaman pengembalian.
 // ===================================================================

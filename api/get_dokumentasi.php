@@ -1,7 +1,7 @@
 <?php
 // ===================================================================
 // File: get_dokumentasi.php
-// Lokasi: htdocs/lpske-portal/api/get_dokumentasi.php
+// Lokasi: htdocs/lstars/api/get_dokumentasi.php
 // Tugas: Mengambil SEMUA dokumentasi kegiatan untuk ditampilkan di halaman
 // ===================================================================
 
@@ -50,7 +50,7 @@ try {
         }
         
         // Set uploader default
-        $row['uploader_nama'] = 'Admin LPSKE';
+        $row['uploader_nama'] = 'Admin LSTARS';
         
         $dokumentasi[] = $row;
     }

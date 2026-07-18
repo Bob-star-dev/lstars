@@ -1,7 +1,7 @@
 <?php
 // ===================================================================
 // FILE: add_inventory.php - FIXED for existing DB structure
-// Lokasi: htdocs/lpske-portal/api/add_inventory.php
+// Lokasi: htdocs/lstars/api/add_inventory.php
 // Tugas: Menambah data inventory baru ke database
 // FIXED: Removed created_at/updated_at columns
 // ===================================================================

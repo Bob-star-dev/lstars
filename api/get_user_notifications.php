@@ -1,7 +1,7 @@
 <?php
 // ===================================================================
 // File: get_user_notifications.php
-// Lokasi: htdocs/lpske-portal/api/get_user_notifications.php
+// Lokasi: htdocs/lstars/api/get_user_notifications.php
 // Fungsi: Mengambil notifikasi internal untuk user yang login
 // ===================================================================
 

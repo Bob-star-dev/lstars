@@ -1,7 +1,7 @@
 <?php
 // ===================================================================
 // 4. FILE PERBAIKAN: get_inventory_detail.php (VERSI DIPERBAIKI)
-// Lokasi: htdocs/lpske-portal/api/get_inventory_detail.php
+// Lokasi: htdocs/lstars/api/get_inventory_detail.php
 // ===================================================================
 
 require 'koneksi.php';

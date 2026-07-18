@@ -1,7 +1,7 @@
 <?php
 // ===================================================================
 // FILE: delete_inventory.php
-// Lokasi: htdocs/lpske-portal/api/delete_inventory.php
+// Lokasi: htdocs/lstars/api/delete_inventory.php
 // Tugas: Menghapus data inventory dari database
 // ===================================================================
 

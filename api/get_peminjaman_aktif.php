@@ -1,7 +1,7 @@
 <?php
 // ===================================================================
 // File: get_peminjaman_aktif.php (VERSI DIPERBAIKI)
-// Lokasi: htdocs/lpske-portal/api/get_peminjaman_aktif.php
+// Lokasi: htdocs/lstars/api/get_peminjaman_aktif.php
 // Tugas: Mengambil data peminjaman dengan status 'Dipinjam'
 // ===================================================================
 

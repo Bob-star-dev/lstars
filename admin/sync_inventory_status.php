@@ -1,13 +1,13 @@
 <?php
 // ===================================================================
 // STEP 1: sync_status_fix.php
-// Lokasi: htdocs/lpske-portal/sync_status_fix.php
+// Lokasi: htdocs/lstars/sync_status_fix.php
 // Tugas: Sinkronkan status database dengan quantity dan fix logic
 // ===================================================================
 
 require 'api/koneksi.php';
 
-echo "<h2>🔧 Fix Status Logic - LPSKE Portal</h2>";
+echo "<h2>🔧 Fix Status Logic - LSTARS Portal</h2>";
 echo "<hr>";
 
 // 1. ANALISIS MASALAH SAAT INI

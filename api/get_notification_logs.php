@@ -1,7 +1,7 @@
 <?php
 // ===================================================================
 // File: get_notification_logs.php
-// Lokasi: htdocs/lpske-portal/api/get_notification_logs.php
+// Lokasi: htdocs/lstars/api/get_notification_logs.php
 // Fungsi: Melihat log notifikasi yang sudah dikirim
 // ===================================================================
 
