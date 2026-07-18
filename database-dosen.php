@@ -5,7 +5,7 @@
 $host = 'localhost';
 $username = 'root';
 $password = '';
-$database = 'lpske-pkl';
+$database = 'lstars';
 
 // Inisialisasi variabel
 $dosen_data = array();
