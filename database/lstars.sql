@@ -229,6 +229,18 @@ CREATE TABLE `izin_penelitian` (
   `catatan_dosen` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data untuk tabel `izin_penelitian`
+--
+
+INSERT INTO `izin_penelitian` (`id`, `mahasiswa_user_id`, `dosen_user_id`, `nama_mahasiswa`, `nim`, `judul_penelitian`, `deskripsi`, `tgl_pengajuan`, `status`, `tgl_diproses`, `diproses_oleh`, `catatan_dosen`) VALUES
+(14, 6, 4, 'nayla', '21.2211', 'menghitung berat badan ', 'menghitung berat badan menggunakan timbangan badan ', '2025-10-08 11:59:14', 'Diajukan', NULL, NULL, NULL),
+(15, 6, 4, 'akbar', '0909090', 'menghitung uang ', 'mnghitung uang ', '2025-10-13 03:07:26', 'Diajukan', NULL, NULL, NULL),
+(16, 6, 7, 'aku', '1232132', 'adalah pokoknya', 'adalah pokoknya', '2026-01-16 03:01:47', 'Ditolak', '2026-01-16 14:32:04', 1, NULL),
+(17, 1, 3, 'test', '123', 'test', 'test', '2026-01-16 04:08:01', 'Disetujui', '2026-01-16 11:10:54', 1, NULL),
+(18, 6, 5, 'saya', '309801809', 'saya', 'sayaa', '2026-01-16 14:55:05', 'Diajukan', NULL, NULL, NULL),
+(19, 6, 7, 'BAYU', '23901809', 'BAYY', 'BAYYYUU', '2026-01-17 03:09:20', 'Diajukan', NULL, NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -270,6 +282,15 @@ CREATE TABLE `logbook` (
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data untuk tabel `logbook`
+--
+
+INSERT INTO `logbook` (`id`, `user_id`, `nama_pengisi`, `nim_pengisi`, `judul`, `tanggal_kegiatan`, `deskripsi`, `created_at`) VALUES
+(9, 6, 'nayla', '22.0912193890', 'menghitung berat badan ', '2025-10-08', 'menghitung berat badan menggunakan timbangan badan ', '2025-10-08 11:44:41'),
+(10, 6, 'aku', '329879', 'adalah pokoknya', '2026-01-16', 'adalah pokoknya', '2026-01-16 03:03:28'),
+(11, 1, 'test', '123', 'test', '2026-01-16', 'test', '2026-01-16 04:09:29');
+
 -- --------------------------------------------------------
 
 --
@@ -283,6 +304,14 @@ CREATE TABLE `log_aktivitas` (
   `detail` text,
   `tgl_aktivitas` datetime DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `log_aktivitas`
+--
+
+INSERT INTO `log_aktivitas` (`id`, `user_id`, `aktivitas`, `detail`, `tgl_aktivitas`) VALUES
+(1, 1, 'Aksi Izin Penelitian', 'Izin penelitian \'test\' telah disetujui', '2026-01-16 11:10:54'),
+(2, 1, 'Aksi Izin Penelitian', 'Izin penelitian \'adalah pokoknya\' telah ditolak', '2026-01-16 14:32:04');
 
 -- --------------------------------------------------------
 
@@ -304,6 +333,15 @@ CREATE TABLE `peminjaman` (
   `nim_peminjam` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data untuk tabel `peminjaman`
+--
+
+INSERT INTO `peminjaman` (`id`, `inventory_id`, `peminjam_user_id`, `asisten_user_id`, `tgl_pinjam`, `tgl_rencana_kembali`, `tgl_aktual_kembali`, `status`, `catatan`, `nama_peminjam`, `nim_peminjam`) VALUES
+(12, 19, 6, NULL, '2025-10-08', '2025-10-09', NULL, 'Diajukan', '', 'nayla', '9320982301932810'),
+(13, 18, 6, NULL, '2026-01-16', '2026-01-17', NULL, 'Dipinjam', '', 'aku', '219847849'),
+(14, 1, 1, NULL, '2026-01-16', '2026-01-17', NULL, 'Diajukan', '', 'test', '123');
+
 -- --------------------------------------------------------
 
 --
@@ -322,6 +360,15 @@ CREATE TABLE `presensi_piket` (
   `status` enum('sedang piket','selesai') NOT NULL DEFAULT 'sedang piket'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data untuk tabel `presensi_piket`
+--
+
+INSERT INTO `presensi_piket` (`id`, `user_id`, `nama_asisten`, `nim_asisten`, `tanggal`, `waktu_masuk`, `waktu_keluar`, `durasi`, `status`) VALUES
+(7, NULL, 'nayla', '22.09109012', '2025-10-08', '18:43:16', NULL, NULL, 'sedang piket'),
+(8, NULL, 'aku', '209818209', '2026-01-16', '10:02:02', NULL, NULL, 'sedang piket'),
+(9, NULL, 'test', '123', '2026-01-16', '11:08:41', NULL, NULL, 'sedang piket');
+
 -- --------------------------------------------------------
 
 --
@@ -339,6 +386,15 @@ CREATE TABLE `presensi_praktikum` (
   `durasi` varchar(100) DEFAULT NULL,
   `status` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `presensi_praktikum`
+--
+
+INSERT INTO `presensi_praktikum` (`id`, `nama_mahasiswa`, `nim_mahasiswa`, `mata_praktikum`, `tanggal`, `waktu_masuk`, `waktu_keluar`, `durasi`, `status`) VALUES
+(9, 'nayla', '22.02910902', 'fisdar', '2025-10-08', '18:43:40', NULL, NULL, 'sedang praktikum'),
+(10, 'aku', '289739731', 'adalah pokoknya', '2026-01-16', '10:02:23', NULL, NULL, 'sedang praktikum'),
+(11, 'test', '123', 'test', '2026-01-16', '11:06:58', NULL, NULL, 'sedang praktikum');
 
 -- --------------------------------------------------------
 
@@ -471,25 +527,25 @@ ALTER TABLE `inventory`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 ALTER TABLE `izin_penelitian`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 ALTER TABLE `jadwal_praktikum`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 ALTER TABLE `logbook`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 ALTER TABLE `log_aktivitas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 ALTER TABLE `peminjaman`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 ALTER TABLE `presensi_piket`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 ALTER TABLE `presensi_praktikum`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;

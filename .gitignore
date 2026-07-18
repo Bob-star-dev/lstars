@@ -1,16 +1,5 @@
-# SQL dump asli (berisi data akun asli) - jangan di-commit
+# SQL dump asli di root (berisi kredensial akun) - pakai database/lstars.sql saja
 /lstars.sql
-
-# Log & debug files
-error_log.txt
-*.log
-api/error_log.txt
-api/debug_log.txt
-api/crud_dosen_debug.log
-api/crud_dosen.txt
-
-# File backup lama
-kumpulanbackup/
 
 # OS/editor junk
 .DS_Store
