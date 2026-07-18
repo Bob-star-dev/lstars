@@ -9,7 +9,7 @@ Portal ini digunakan untuk mengelola presensi praktikum & piket asisten, peminja
 - **Backend**: PHP native (tanpa framework), PHP 8.x
 - **Database**: MySQL / MariaDB
 - **Frontend**: HTML, CSS, JavaScript (vanilla)
-- Koneksi database menggunakan `mysqli` (untuk sebagian besar endpoint di `api/`) dan `PDO` (`config/database.php`)
+- Koneksi database menggunakan `mysqli` (sebagian besar endpoint di `api/`, plus `database-dosen.php` & `database-asisten.php` yang punya koneksi sendiri) dan `PDO` (`config/database.php`)
 
 ## Struktur Folder
 
@@ -79,7 +79,11 @@ Pastikan hasil akhirnya adalah `C:\xampp\htdocs\lstars\index.html`, bukan `C:\xa
    INSERT INTO `users` (`username`, `password`, `nama_lengkap`, `nomor_induk`, `email`, `role`)
    VALUES ('admin', '<password_yang_diberikan>', 'Nama Admin', '', 'admin@example.com', 'admin');
    ```
-5. Konfigurasi koneksi database di project **sudah diset ke default XAMPP Windows** (`host: localhost`, `user: root`, `password: kosong`), jadi biasanya **tidak perlu diubah apa-apa** di `config/database.php` maupun `api/koneksi.php`. Ubah hanya jika instalasi MySQL kamu memakai username/password custom.
+5. Konfigurasi koneksi database di project **sudah diset ke default XAMPP Windows** (`host: localhost`, `user: root`, `password: kosong`), jadi biasanya **tidak perlu diubah apa-apa**. Kalau instalasi MySQL kamu memakai username/password custom, konfigurasi koneksi database ada di **4 file terpisah** dan harus disamakan semua:
+   - `config/database.php`
+   - `api/koneksi.php`
+   - `database-dosen.php`
+   - `database-asisten.php`
 
 ### 4. Akses Project
 
