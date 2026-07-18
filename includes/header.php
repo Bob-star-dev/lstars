@@ -6,7 +6,7 @@ session_start();
 date_default_timezone_set('Asia/Jakarta');
 
 // Base URL configuration
-$base_url = 'http://localhost/LSTARS1/'; // Sesuaikan dengan path project Anda
+$base_url = 'http://localhost/lstars/'; // Sesuaikan dengan path project Anda
 
 // Site configuration
 $site_name = 'LSTARS Portal';
